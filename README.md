@@ -101,7 +101,7 @@ cd Food-Product-Scanner---Nutriscan
   - Open the generated HTTP link in your browser.
 
 📸 Screenshots
-[Home Page](Screenshots/pic1.png)
-[ Page 1 ](Screenshots/pic2.png)
-[ Page 2 ](Screenshots/pic3.png)
-[ Page 3](Screenshots/pic4.png)
+![Home](Screenshots/pic1.png)
+![Page 1](Screenshots/pic2.png)
+![Page 2 ](Screenshots/pic3.png)
+![Page 3](Screenshots/pic4.png)
