@@ -1,49 +1,103 @@
-# Food-Product-Scanner---Nutriscan
-Nutriscan is your ultimate health companion. Scan barcodes or enter food names to get instant calorie, ingredient, and health insights. Visualize nutrition with intuitive charts. Learn how to burn calories through activities like jogging and yoga. Empower your health journey with smarter food choices.
-**#Requirement Specification **
-** Frontend Development** 
-• Languages: 
-o HTML5: To structure the web pages. 
-o CSS3: For styling and creating an intuitive user interface. 
-o JavaScript: For interactive functionalities and using Quagga.js for barcode scanning. 
-• Library: Quagga.js 
-Quagga.js is a lightweight and open-source barcode scanner library designed to work with modern browsers. It enables real-time barcode detection and decoding directly
-through the browser.
-**Backend** **Development** 
-• Framework: Django (Python-based web framework) 
-Django provides a robust foundation for building scalable web applications with minimal effort in configuration. 
-• Libraries: 
-o requests: For API calls to fetch data from FoodFacts API and Nutrition API. 
-o mathfilter: For performing calculations in Django templates. 
-o static loader: To manage and serve static files efficiently. 
-o humanizer: To improve readability of data by formatting numbers and dates.
-**APIs** 
-• FoodFacts API 
-o Purpose: Retrieve product details like product names, barcodes, and descriptions.
-Nutrition API (API Ninjas) 
-o Purpose: Fetch detailed nutritional information, including calorie content, ingredients, and values per 100 grams. 
-o Integration: Allows the application to provide health insights and determine food quality. 
-**Data** **Visualization** 
-• Chart.js 
-o Purpose: To create bar charts for visualizing nutritional values like protein, fat, carbohydrates, and vitamins. 
-**Steps to Execute:**
-1. Create new Project in Vscode
-2. Install the Required Dependencies
-3. Open New Terminal and Execute this commands
-    pip install django
-    pip install requests
-    pip install django-mathfilters
-4. Now Start Creating project named foodie using command
-    ( django-admin startproject foodie . ) #At the end dot is compulsory otherwise foodie project created as subfolder and it will not run
-5. Create and Startapp named as counter
-    django-admin startapp counter
-6. create new folder  template in counter > create File named home.html in template and copy the data from original file
-7. create new file urls.py in counter and copy data from original file urls.py
-8. follow same procedure for settings.py, views.py and (urls.py (Foodie Folder))#Copy data from original file paste it in New file
-9. copy static files folder in foodie and counter both folder
-  **Note:** Arrange the Files same as original file in newly created folder, Dont run original folder you should need to create new projeect and new app and copy data same as original files.
-10. now Collectstatic files by executing this Command
-    python manage.py collectstatic
-11. After Making all changes Now time to Execute 
-    python manage.py runserver
-12. After Running serverr you will get a http link copy it and open i ur Browser. 
+# 🍎 Food-Product-Scanner — Nutriscan
+
+**Nutriscan** is your ultimate health companion.  
+Scan barcodes or enter food names to get **instant calorie**, **ingredient**, and **health insights**. Visualize nutritional values with **interactive charts** and get recommendations on how to burn calories through activities like **jogging**, **yoga**, and more.
+
+---
+
+## ✅ Features
+
+- 📷 Real-time barcode scanning using **Quagga.js**
+- 📝 Manual food name entry supported
+- 🔍 Fetches product name and details using **FoodFacts API**
+- 🧮 Retrieves nutritional data via **Nutrition API (API Ninjas)**
+- 📊 Displays nutritional content in **bar charts**
+- 🧘‍♀️ Suggests calorie-burning activities based on food
+- 💡 Easy-to-use UI for smarter food decisions
+
+---
+
+## 🛠️ Requirement Specification
+
+### 🔹 Frontend Development
+
+- **Languages:**
+  - HTML5 — For structuring web pages
+  - CSS3 — For modern and responsive design
+  - JavaScript — For interactivity and barcode scanning
+
+- **Library:**
+  - `Quagga.js` — A lightweight, open-source barcode scanning library for modern browsers
+
+### 🔹 Backend Development
+
+- **Framework:**
+  - `Django` (Python) — A robust and scalable web framework
+
+- **Libraries:**
+  - `requests` — For making API calls
+  - `mathfilter` — For template-level mathematical calculations
+  - `static loader` — For managing static files
+  - `humanizer` — For formatting numbers and dates in a readable way
+
+### 🔹 APIs Used
+
+- **FoodFacts API**
+  - Fetches food product details based on barcode
+  
+- **Nutrition API (API Ninjas)**
+  - Provides calorie, macronutrient, and ingredient breakdown per 100 grams
+
+### 🔹 Data Visualization
+
+- **Chart.js** — Used to create interactive bar charts of nutrient breakdown
+
+---
+
+## ▶️ How to Run This Project
+
+### 📦 Step-by-Step Setup
+✅ Option 1: Clone the Repository 
+git clone https://github.com/your-username/Food-Product-Scanner---Nutriscan.git
+cd Food-Product-Scanner---Nutriscan
+## or Download as ZIP
+    Go to the GitHub repository page.
+    Click on the green Code button.
+    Select Download ZIP.
+    Extract the ZIP file on your system.
+    Open the project folder in VS Code or any IDE.
+    
+**After Saving this original folder then Follow Below Instructions**
+
+1. **Create a new project in VS Code**  
+2. **Install Required Dependencies**  
+   ```bash
+   pip install django
+   pip install requests
+   pip install django-mathfilters
+3. ****Start the Project**
+   django-admin startproject foodie .
+4. **Create a New App**
+   django-admin startapp counter
+5. **Project Structure Setup**
+   Create templates/ inside the counter app
+   Add home.html file inside templates/ folder
+   Create urls.py inside the counter app
+   Update the following files by copying from the original working project:
+      home.html
+      urls.py (inside foodie project folder)
+      views.py
+      settings.py
+6. **Static Files**
+   Copy static/ folder from original project into both:
+      foodie/
+      counter/
+7. **Collect Static Files**
+   python manage.py collectstatic
+8. **Run the Server**
+   python manage.py runserver
+9. **Launch App**
+   Open the generated HTTP link in your browser.
+
+📸 Screenshots
+[Home Page](Screenshots/home.png)
