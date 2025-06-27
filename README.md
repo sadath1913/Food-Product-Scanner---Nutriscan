@@ -66,6 +66,7 @@ cd Food-Product-Scanner---Nutriscan
     Select Download ZIP.
     Extract the ZIP file on your system.
     Open the project folder in VS Code or any IDE.
+**(or)Directly Download Zip file from upload section**
     
 **After Saving this original folder then Follow Below Instructions**
 
