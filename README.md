@@ -58,7 +58,7 @@ Scan barcodes or enter food names to get **instant calorie**, **ingredient**, an
 
 ### 📦 Step-by-Step Setup
 ✅ Option 1: Clone the Repository 
-git clone https://github.com/your-username/Food-Product-Scanner---Nutriscan.git
+git clone https://github.com/sadath1913/Food-Product-Scanner---Nutriscan.git
 cd Food-Product-Scanner---Nutriscan
 ## or Download as ZIP
     Go to the GitHub repository page.
@@ -78,26 +78,29 @@ cd Food-Product-Scanner---Nutriscan
 3. ****Start the Project**
    django-admin startproject foodie .
 4. **Create a New App**
-   django-admin startapp counter
+    -django-admin startapp counter
 5. **Project Structure Setup**
-   Create templates/ inside the counter app
-   Add home.html file inside templates/ folder
-   Create urls.py inside the counter app
-   Update the following files by copying from the original working project:
-      home.html
-      urls.py (inside foodie project folder)
-      views.py
-      settings.py
+  - Create templates/ inside the counter app
+  - Add home.html file inside templates/ folder
+  - Create urls.py inside the counter app
+  - Update the following files by copying from the original working project:
+     - home.html
+     - urls.py (inside foodie project folder)
+     - views.py
+     - settings.py
 6. **Static Files**
-   Copy static/ folder from original project into both:
-      foodie/
-      counter/
+  - Copy static/ folder from original project into both:
+     - foodie/
+     - counter/
 7. **Collect Static Files**
-   python manage.py collectstatic
+  - python manage.py collectstatic
 8. **Run the Server**
-   python manage.py runserver
+  - python manage.py runserver
 9. **Launch App**
-   Open the generated HTTP link in your browser.
+  - Open the generated HTTP link in your browser.
 
 📸 Screenshots
-[Home Page](Screenshots/home.png)
+[Home Page](Screenshots/pic1.png)
+[ Page 1 ](Screenshots/pic2.png)
+[ Page 2 ](Screenshots/pic3.png)
+[ Page 3](Screenshots/pic4.png)
